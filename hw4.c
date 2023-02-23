@@ -40,7 +40,7 @@ int main(int argc,char **argv) {
       printf("Out of memory\n"); MPI_Abort(comm,0); }
     for (int i=0; i<ndata; i++)
       data[i] = i;
-    /* Exercise */
+    /** Exercise */
     MPI_Datatype scattertype;
     int count,stride,blocklength;
     for (int sendto=0; sendto<nprocs; sendto++) {
